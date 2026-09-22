@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Exciclo · Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F1E8;font-family:"IBM Plex Sans","Helvetica Neue",Helvetica,sans-serif;color:#1B1A17}
+a{color:#1F5C57}a:hover{color:#153F3B}
+</style>
+</helmet>
+<div style="width: 1440px; height: 4500px; background: #F5F1E8; display: flex; flex-direction: column; font-family: 'IBM Plex Sans','Helvetica Neue',Helvetica,sans-serif; color: #1B1A17;">
+
+<!-- NAV -->
+<header style="height: 96px; box-sizing: border-box; padding: 0 120px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #DDD5C4;">
+<a href="#inicio" style="text-decoration: none; color: #1B1A17; font-family: 'Fraunces',Georgia,serif; font-size: 32px; font-weight: 700; letter-spacing: -0.01em;">Ex<span style="color: {{accent}};">ciclo</span></a>
+<nav style="display: flex; align-items: center; gap: 40px; font-size: 16px; font-weight: 500;">
+<a href="#ciclo" style="text-decoration: none; color: #1B1A17;">El Ciclo</a>
+<a href="#experiencia" style="text-decoration: none; color: #1B1A17;">Experiencia</a>
+<a href="#precio" style="text-decoration: none; color: #1B1A17;">Precio</a>
+<a href="#contacto" style="text-decoration: none; color: #FFFFFF; background: {{accent}}; padding: 0 22px; height: 46px; display: flex; align-items: center; border-radius: 999px; font-weight: 600;">Agendar 30 minutos</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="inicio" style="height: 760px; box-sizing: border-box; padding: 0 120px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 28px;">
+<div style="font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: {{accent}};">Consultoría de IA aplicada a procesos</div>
+<h1 style="margin: 0; font-family: 'Fraunces',Georgia,serif; font-weight: 700; font-size: 68px; line-height: 1.02; letter-spacing: -0.025em; text-wrap: balance;">Experiencia de marcas globales. <span style="color: {{accent}};">Al alcance de su empresa.</span></h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.55; color: #3A3833; max-width: 560px; text-wrap: pretty;">Durante 20 años construí tecnología para Ray-Ban, Versace y Comex. Hoy aplico esa experiencia a su negocio: en un ciclo de 4 semanas mejoramos y optimizamos sus procesos con inteligencia artificial, a precio fijo.</p>
+<div style="display: flex; gap: 14px; align-items: center;">
+<a href="#contacto" style="text-decoration: none; color: #FFFFFF; background: {{accent}}; height: 56px; padding: 0 30px; display: flex; align-items: center; border-radius: 999px; font-size: 17px; font-weight: 600;">Agendar una conversación</a>
+<a href="#ciclo" style="text-decoration: none; color: #1B1A17; height: 56px; padding: 0 28px; display: flex; align-items: center; border-radius: 999px; font-size: 17px; font-weight: 600; border: 1.5px solid #1B1A17;">Cómo funciona el Ciclo</a>
+</div>
+</div>
+<div style="display: flex; justify-content: center; align-items: center; position: relative; height: 560px;">
+<svg width="540" height="540" viewBox="0 0 540 540" aria-label="El Ciclo de Éxito: cuatro semanas" role="img">
+<circle cx="270" cy="270" r="200" fill="none" stroke="#E4DCCB" stroke-width="2"></circle>
+<circle cx="270" cy="270" r="200" fill="none" stroke="#A9C3BF" stroke-width="26" stroke-linecap="round" stroke-dasharray="280 976.6" transform="rotate(-84 270 270)"></circle>
+<circle cx="270" cy="270" r="200" fill="none" stroke="#6E9C96" stroke-width="26" stroke-linecap="round" stroke-dasharray="280 976.6" transform="rotate(6 270 270)"></circle>
+<circle cx="270" cy="270" r="200" fill="none" stroke="#1F5C57" stroke-width="26" stroke-linecap="round" stroke-dasharray="280 976.6" transform="rotate(96 270 270)"></circle>
+<circle cx="270" cy="270" r="200" fill="none" stroke="#153F3B" stroke-width="26" stroke-linecap="round" stroke-dasharray="280 976.6" transform="rotate(186 270 270)"></circle>
+<text x="462" y="86" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#1B1A17">Semana 1</text>
+<text x="462" y="106" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="14" fill="#5A564D">Diagnóstico</text>
+<text x="462" y="462" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#1B1A17">Semana 2</text>
+<text x="462" y="482" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="14" fill="#5A564D">Diseño y decisión</text>
+<text x="78" y="462" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#1B1A17">Semana 3</text>
+<text x="78" y="482" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="14" fill="#5A564D">Construcción</text>
+<text x="78" y="86" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#1B1A17">Semana 4</text>
+<text x="78" y="106" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="14" fill="#5A564D">MVP funcionando</text>
+<text x="270" y="282" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="150" font-weight="700" fill="#1B1A17">4</text>
+<text x="270" y="322" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="3" fill="#1B1A17">SEMANAS</text>
+<text x="270" y="352" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="18" font-style="italic" fill="#1F5C57">Cada ciclo, un éxito</text>
+</svg>
+<div style="position: absolute; right: 0; bottom: 40px; background: #FFFDF8; border: 1px solid #DDD5C4; border-radius: 14px; padding: 16px 22px; display: flex; flex-direction: column; gap: 2px; box-shadow: 0 12px 30px rgba(27,26,23,0.08);">
+<div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #5A564D;">Precio fijo</div>
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 28px; font-weight: 700;">USD 9.000</div>
+<div style="font-size: 14px; color: #3A3833;">por ciclo de 4 semanas</div>
+</div>
+</div>
+</section>
+
+<!-- BRANDS -->
+<section style="height: 180px; box-sizing: border-box; padding: 0 120px; display: flex; flex-direction: column; justify-content: center; gap: 22px; border-top: 1px solid #DDD5C4; border-bottom: 1px solid #DDD5C4; background: #EFE9DC;">
+<div style="font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #5A564D; text-align: center;">Experiencia construida junto a marcas como</div>
+<div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Fraunces',Georgia,serif; font-size: 30px; font-weight: 500; color: #4A4740;">
+<span>Ray-Ban</span><span>Versace</span><span>Persol</span><span>Sunglass Hut</span><span>Kering</span><span>Comex</span>
+</div>
+</section>
+
+<!-- COMPARISON -->
+<section style="height: 660px; box-sizing: border-box; padding: 96px 120px 0; display: flex; flex-direction: column; gap: 44px;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 48px;">
+<h2 style="margin: 0; font-family: 'Fraunces',Georgia,serif; font-weight: 700; font-size: 48px; line-height: 1.08; letter-spacing: -0.02em; max-width: 720px; text-wrap: balance;">Lo que antes solo tenían las grandes empresas, ahora a su alcance.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3A3833; max-width: 380px;">Una fórmula basada en experiencia y conocimiento, no en horas facturables.</p>
+</div>
+<div style="display: flex; flex-direction: column; border: 1px solid #DDD5C4; border-radius: 16px; overflow: hidden; background: #FFFDF8;">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #EFE9DC; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #5A564D;">
+<div style="padding: 18px 28px;"></div>
+<div style="padding: 18px 28px;">El camino tradicional</div>
+<div style="padding: 18px 28px; background: {{accent}}; color: #FFFFFF;">El Ciclo Exciclo</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #DDD5C4; font-size: 18px;">
+<div style="padding: 20px 28px; font-weight: 600;">Tiempo hasta ver resultados</div>
+<div style="padding: 20px 28px; color: #5A564D;">Meses de propuestas y planeación</div>
+<div style="padding: 20px 28px; font-weight: 600; color: {{accent}};">4 semanas</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #DDD5C4; font-size: 18px;">
+<div style="padding: 20px 28px; font-weight: 600;">Precio</div>
+<div style="padding: 20px 28px; color: #5A564D;">Presupuestos abiertos que crecen</div>
+<div style="padding: 20px 28px; font-weight: 600; color: {{accent}};">USD 9.000 fijo por ciclo</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #DDD5C4; font-size: 18px;">
+<div style="padding: 20px 28px; font-weight: 600;">Qué recibe</div>
+<div style="padding: 20px 28px; color: #5A564D;">Informes y presentaciones</div>
+<div style="padding: 20px 28px; font-weight: 600; color: {{accent}};">Una solución funcionando</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #DDD5C4; font-size: 18px;">
+<div style="padding: 20px 28px; font-weight: 600;">Quién lo hace</div>
+<div style="padding: 20px 28px; color: #5A564D;">Equipos que cambian en el camino</div>
+<div style="padding: 20px 28px; font-weight: 600; color: {{accent}};">Experiencia senior de principio a fin</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #DDD5C4; font-size: 18px;">
+<div style="padding: 20px 28px; font-weight: 600;">Compromiso</div>
+<div style="padding: 20px 28px; color: #5A564D;">Contratos largos desde el inicio</div>
+<div style="padding: 20px 28px; font-weight: 600; color: {{accent}};">Usted decide ciclo a ciclo</div>
+</div>
+</div>
+</section>
+
+<!-- EL CICLO -->
+<section id="ciclo" style="height: 700px; box-sizing: border-box; padding: 96px 120px 0; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
+<div style="font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: {{accent}};">El Ciclo de Éxito</div>
+<h2 style="margin: 0; font-family: 'Fraunces',Georgia,serif; font-weight: 700; font-size: 48px; line-height: 1.08; letter-spacing: -0.02em;">Diagnosticar bien. Decidir juntos. Construir rápido.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px;">
+<div style="background: #FFFDF8; border: 1px solid #DDD5C4; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px; height: 300px; box-sizing: border-box;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 44px; font-weight: 700; color: #A9C3BF; line-height: 1;">01</div>
+<div style="font-size: 14px; letter-spacing: 0.1em; font-weight: 600; color: {{accent}};">SEMANA 1</div>
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 26px; font-weight: 700;">Diagnóstico</div>
+<div style="font-size: 17px; line-height: 1.5; color: #3A3833;">Entendemos su negocio y encontramos los procesos que más tiempo y dinero le cuestan.</div>
+</div>
+<div style="background: #FFFDF8; border: 1px solid #DDD5C4; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px; height: 300px; box-sizing: border-box;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 44px; font-weight: 700; color: #6E9C96; line-height: 1;">02</div>
+<div style="font-size: 14px; letter-spacing: 0.1em; font-weight: 600; color: {{accent}};">SEMANA 2</div>
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 26px; font-weight: 700;">Diseño y decisión</div>
+<div style="font-size: 17px; line-height: 1.5; color: #3A3833;">Proponemos la solución con su retorno esperado. Usted aprueba el alcance antes de construir.</div>
+</div>
+<div style="background: #FFFDF8; border: 1px solid #DDD5C4; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px; height: 300px; box-sizing: border-box;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 44px; font-weight: 700; color: #1F5C57; line-height: 1;">03</div>
+<div style="font-size: 14px; letter-spacing: 0.1em; font-weight: 600; color: {{accent}};">SEMANAS 3 Y 4</div>
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 26px; font-weight: 700;">MVP funcionando</div>
+<div style="font-size: 17px; line-height: 1.5; color: #3A3833;">Implementamos la solución con IA, la dejamos en marcha y capacitamos a su equipo.</div>
+</div>
+<div style="background: {{accent}}; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px; height: 300px; box-sizing: border-box; color: #FFFFFF;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 44px; font-weight: 700; color: #A9C3BF; line-height: 1;">∞</div>
+<div style="font-size: 14px; letter-spacing: 0.1em; font-weight: 600; color: #E3EFEC;">DESPUÉS</div>
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 26px; font-weight: 700;">Plan Evolución</div>
+<div style="font-size: 17px; line-height: 1.5;">Soporte y mejora continua mensual, para que la solución crezca con su negocio.</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 24px; background: #EFE9DC; border-radius: 16px; padding: 22px 28px;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 22px; font-weight: 700; white-space: nowrap;">¿Y si el problema es más grande?</div>
+<div style="font-size: 17px; line-height: 1.5; color: #2E2C28;">Se lo mostramos con datos. Entregamos funcionando la parte más crítica y usted decide si seguimos con otro ciclo, con el mismo formato y el mismo precio.</div>
+</div>
+</section>
+
+<!-- EXPERIENCIA -->
+<section id="experiencia" style="height: 860px; box-sizing: border-box; padding: 96px 120px 0; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 32px;">
+<div style="grid-column: span 5; height: 600px; background: #E4DCCB; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 16px; color: #5A564D; font-weight: 500;">[Foto de Cristian]</div>
+<div style="grid-column: span 7; display: flex; flex-direction: column; gap: 24px; padding-left: 32px;">
+<div style="font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: {{accent}};">Quién está detrás</div>
+<h2 style="margin: 0; font-family: 'Fraunces',Georgia,serif; font-weight: 700; font-size: 46px; line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance;">Veinte años construyendo tecnología para marcas globales. Ahora, para la suya.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3A3833; text-wrap: pretty;">Soy Cristian Aguirre Montes. Nací en Chile, construí mi carrera en Europa y hoy vivo en Medellín con mi familia. Dirigí un centro tecnológico en Málaga al servicio de marcas como Ray-Ban y Versace, y en Valtech lideré la primera plataforma MACH 100% latinoamericana, para Comex en México.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3A3833; text-wrap: pretty;">Fundé Exciclo para que las empresas de la región accedan a ese mismo nivel de experiencia, sin esperar meses ni pagar tarifas de gran consultora.</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 8px;">
+<div style="border-top: 2px solid #1B1A17; padding-top: 14px; display: flex; flex-direction: column; gap: 4px;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 40px; font-weight: 700; line-height: 1;">20+</div>
+<div style="font-size: 16px; color: #3A3833;">años liderando tecnología</div>
+</div>
+<div style="border-top: 2px solid #1B1A17; padding-top: 14px; display: flex; flex-direction: column; gap: 4px;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 40px; font-weight: 700; line-height: 1;">5</div>
+<div style="font-size: 16px; color: #3A3833;">continentes con proyectos entregados</div>
+</div>
+<div style="border-top: 2px solid #1B1A17; padding-top: 14px; display: flex; flex-direction: column; gap: 4px;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 40px; font-weight: 700; line-height: 1;">6.500</div>
+<div style="font-size: 16px; color: #3A3833;">tiendas en una sola plataforma</div>
+</div>
+<div style="border-top: 2px solid #1B1A17; padding-top: 14px; display: flex; flex-direction: column; gap: 4px;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 40px; font-weight: 700; line-height: 1;">2025</div>
+<div style="font-size: 16px; color: #3A3833;">Team of the Year, Valtech Global Awards</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRECIO -->
+<section id="precio" style="height: 620px; box-sizing: border-box; padding: 96px 120px 0; display: flex; flex-direction: column; gap: 40px;">
+<h2 style="margin: 0; font-family: 'Fraunces',Georgia,serif; font-weight: 700; font-size: 48px; line-height: 1.08; letter-spacing: -0.02em;">Un precio claro, desde el primer día.</h2>
+<div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px;">
+<div style="grid-column: span 7; background: #FFFDF8; border: 1.5px solid #1B1A17; border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 22px; box-sizing: border-box;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<div style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #5A564D;">Ciclo de Éxito</div>
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 64px; font-weight: 700; line-height: 1;">USD 9.000</div>
+</div>
+<div style="font-size: 17px; color: #3A3833; padding-bottom: 8px;">por ciclo de 4 semanas</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 24px; font-size: 17px; line-height: 1.4;">
+<div style="display: flex; gap: 10px; align-items: flex-start;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5C57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg><span>Diagnóstico de su negocio y sus procesos</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5C57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg><span>Diseño de la solución con retorno esperado</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5C57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg><span>MVP con IA implementado y funcionando</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5C57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg><span>Capacitación de su equipo</span></div>
+</div>
+<a href="#contacto" style="align-self: flex-start; text-decoration: none; color: #FFFFFF; background: {{accent}}; height: 56px; padding: 0 30px; display: flex; align-items: center; border-radius: 999px; font-size: 17px; font-weight: 600;">Empezar mi ciclo</a>
+</div>
+<div style="grid-column: span 5; display: flex; flex-direction: column; gap: 24px;">
+<div style="background: #EFE9DC; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 24px; font-weight: 700;">Sin sorpresas</div>
+<div style="font-size: 17px; line-height: 1.55; color: #2E2C28;">Si el problema es más grande, se lo decimos con datos en la semana 2. Usted decide si continuamos con otro ciclo, al mismo precio.</div>
+</div>
+<div style="background: {{accent}}; color: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1;">
+<div style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #E3EFEC;">Después del ciclo</div>
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 24px; font-weight: 700;">Plan Evolución</div>
+<div style="font-size: 17px; line-height: 1.55;">Soporte y mejora continua mensual, por el 20% del valor del ciclo.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section id="contacto" style="height: 460px; box-sizing: border-box; padding: 40px 120px 0;">
+<div style="height: 380px; box-sizing: border-box; background: {{accent}}; border-radius: 28px; padding: 64px 72px; display: flex; justify-content: space-between; align-items: center; gap: 48px; color: #FFFFFF;">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 700px;">
+<h2 style="margin: 0; font-family: 'Fraunces',Georgia,serif; font-weight: 700; font-size: 52px; line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance;">Su próximo ciclo de éxito empieza con una conversación.</h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #E3EFEC;">30 minutos para entender su negocio y ver si Exciclo es para usted.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; min-width: 300px;">
+<a href="https://wa.me/573244975093" style="text-decoration: none; color: #1B1A17; background: #FFFDF8; height: 58px; padding: 0 28px; display: flex; align-items: center; justify-content: center; border-radius: 999px; font-size: 17px; font-weight: 600;">Escribir por WhatsApp</a>
+<a href="mailto:cristian@exciclo.com" style="text-decoration: none; color: #FFFFFF; height: 58px; padding: 0 28px; display: flex; align-items: center; justify-content: center; border-radius: 999px; font-size: 17px; font-weight: 600; border: 1.5px solid #FFFFFF;">Enviar un correo</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="height: 144px; box-sizing: border-box; padding: 0 120px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #DDD5C4;">
+<div style="display: flex; flex-direction: column; gap: 4px;">
+<div style="font-family: 'Fraunces',Georgia,serif; font-size: 26px; font-weight: 700;">Ex<span style="color: {{accent}};">ciclo</span></div>
+<div style="font-size: 15px; color: #5A564D;">Cada ciclo, un éxito · Medellín, Colombia · Proyectos en toda Latinoamérica</div>
+</div>
+<div style="display: flex; gap: 28px; font-size: 15px; font-weight: 500;">
+<a href="mailto:cristian@exciclo.com" style="text-decoration: none;">cristian@exciclo.com</a>
+<a href="https://wa.me/573244975093" style="text-decoration: none;">+57 324 497 5093</a>
+<a href="https://www.linkedin.com/in/cristianaguirremontes/" style="text-decoration: none;">LinkedIn</a>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1F5C57","options":["#1F5C57","#8A3B1F","#2B3A67","#1B1A17"]},"$preview":{"width":1440,"height":4500}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1F5C57' };
+}
+}
+</script>
+</body>
+</html>
