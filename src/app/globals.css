@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #f5f1e8;
-  --color-surface: #fffdf8;
-  --color-surface-alt: #efe9dc;
-  --color-border: #ddd5c4;
+  /* Lleva alfa a propósito: se compone sobre el lienzo del navegador y da
+     un ~#fbf8f8. `cream` es además el color del texto sobre fondos oscuros,
+     donde ese 76% sigue dejando 9:1 de contraste. */
+  --color-cream: #faf6f6c2;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f3f3f3;
+  --color-border: #e4e0e0;
 
   --color-ink: #0b2036;
   --color-body: #33465a;
@@ -24,11 +27,21 @@
   --color-ring-3: #fbbd0c;
   --color-ring-4: #102a50;
 
-  --font-serif: var(--font-fraunces), Georgia, serif;
-  --font-sans: var(--font-plex), "Helvetica Neue", Helvetica, sans-serif;
+  /* Instrument Sans para titulares e Inter para texto: una grotesca de
+     display con carácter y una de lectura neutra. Sustituyen a la pareja
+     Fraunces/IBM Plex, que daba un aire editorial y no ejecutivo. */
+  --font-display: var(--font-instrument), "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
 }
 
 @layer base {
+  /* Dos secciones seguidas sobre el mismo fondo se fundían en un solo bloque
+     largo. La línea aparece sola cuando eso pasa y no aparece cuando el
+     cambio de fondo ya las separa, así que no hay que acordarse de ponerla. */
+  [data-tone="base"] + [data-tone="base"] {
+    border-top: 1px solid var(--color-border);
+  }
+
   body {
     background: var(--color-cream);
     color: var(--color-ink);

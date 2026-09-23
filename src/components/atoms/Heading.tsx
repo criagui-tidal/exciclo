@@ -28,7 +28,7 @@ export default function Heading({
 
   return (
     <Tag
-      className={`m-0 font-serif font-bold text-balance ${toneClasses[tone]} ${levelClasses[as]} ${className}`}
+      className={`m-0 font-display font-bold text-balance ${toneClasses[tone]} ${levelClasses[as]} ${className}`}
     >
       {children}
     </Tag>

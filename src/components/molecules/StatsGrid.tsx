@@ -1,15 +1,16 @@
 import StatNumber from "@/components/atoms/StatNumber";
 
-const stats = [
-  { value: "20+", label: "años liderando tecnología" },
-  { value: "5", label: "continentes con proyectos entregados" },
-  { value: "6.500", label: "tiendas en una sola plataforma" },
-  { value: "2025", label: "Team of the Year, Valtech Global Awards" },
-];
+export type Stat = { value: string; label: string };
 
-export default function StatsGrid() {
+export default function StatsGrid({
+  stats,
+  className = "",
+}: {
+  stats: readonly Stat[];
+  className?: string;
+}) {
   return (
-    <div className="mt-2 grid grid-cols-2 gap-4">
+    <div className={`grid grid-cols-2 gap-4 ${className}`}>
       {stats.map((stat) => (
         <StatNumber key={stat.label} value={stat.value} label={stat.label} />
       ))}

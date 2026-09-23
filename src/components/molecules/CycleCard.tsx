@@ -1,46 +1,41 @@
-export default function CycleCard({
-  index,
-  numberColor,
-  week,
-  title,
-  description,
-  highlight = false,
-}: {
+export type CycleStep = {
   index: string;
-  numberColor: string;
+  color: string;
   week: string;
   title: string;
   description: string;
-  highlight?: boolean;
-}) {
+  highlight: boolean;
+};
+
+export default function CycleCard({ step }: { step: CycleStep }) {
   return (
     <div
-      className={`flex h-[280px] flex-col gap-3 rounded-2xl p-7 sm:h-[300px] ${
-        highlight
+      className={`flex h-full min-h-[280px] flex-col gap-3 rounded-2xl p-7 sm:min-h-[300px] ${
+        step.highlight
           ? "bg-accent text-white"
           : "border border-border bg-surface text-ink"
       }`}
     >
       <div
-        className="font-serif text-[44px] font-bold leading-none"
-        style={{ color: numberColor }}
+        className="font-display text-[44px] font-bold leading-none"
+        style={{ color: step.color }}
       >
-        {index}
+        {step.index}
       </div>
       <div
         className={`text-sm font-semibold tracking-[0.1em] ${
-          highlight ? "text-accent-tint" : "text-accent"
+          step.highlight ? "text-accent-tint" : "text-accent"
         }`}
       >
-        {week}
+        {step.week}
       </div>
-      <div className="font-serif text-2xl font-bold">{title}</div>
+      <div className="font-display text-2xl font-bold">{step.title}</div>
       <div
         className={`text-[17px] leading-snug ${
-          highlight ? "text-white" : "text-body"
+          step.highlight ? "text-white" : "text-body"
         }`}
       >
-        {description}
+        {step.description}
       </div>
     </div>
   );

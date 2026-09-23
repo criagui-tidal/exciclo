@@ -8,7 +8,7 @@ const sizeClasses = {
 
 export default function Logo({
   size = "header",
-  href = "#inicio",
+  href = "/",
 }: {
   size?: keyof typeof sizeClasses;
   href?: string;
